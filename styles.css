@@ -164,6 +164,9 @@
      padding:.5em;
      border-radius: 10px;
 }
+.pageintro, .pageheading{
+  text-align: left;
+}
  .cards{
      width:100%;
      display: flex;
@@ -198,4 +201,3 @@
      .card:hover{
          transform: scale(1.10);
     }
-     
