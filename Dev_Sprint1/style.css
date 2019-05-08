@@ -65,3 +65,34 @@ body{
   color: #333333;
   position: relative;
 }
+
+/*h2 topic*/
+.topic{
+  font-size: 3rem;
+  letter-spacing: 3px;
+}
+
+/*Accordion*/
+.container{
+  width: 100%;
+}
+
+label{
+  display: block;
+}
+
+.title1{
+  background: #ccdfcb;
+  padding: 10px;
+  font-weight: bold;
+  border: .5px solid #eeeeee;
+  cursor: pointer;
+}
+
+span{
+  position: absolute;
+  right: 15px;
+  font-size: .8em;
+}
+
+.
