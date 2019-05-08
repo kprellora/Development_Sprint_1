@@ -81,7 +81,7 @@ label{
   display: block;
 }
 
-.title1{
+.title{
   background: #ccdfcb;
   padding: 10px;
   font-weight: bold;
@@ -95,4 +95,22 @@ span{
   font-size: .8em;
 }
 
-.
+.contentBox{
+  margin: 0 auto;
+  padding-left: 10px;
+  height: 0;
+  overflow: hidden;
+  transition: all .3s;
+}
+
+#title1:checked + .contentBox,
+#title2:checked + .contentBox,
+#title3:checked + .contentBox,
+#title4:checked + .contentBox{
+  padding: 20px 0px 20px 10px;
+  height: 50px;
+}
+
+input{
+  display: none;
+}
