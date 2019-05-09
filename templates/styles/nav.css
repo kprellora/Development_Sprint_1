@@ -15,7 +15,7 @@ header {
 }
 
 main {
-	margin: 1em;
+	padding: 1em;
 }
 
 ul {
@@ -93,15 +93,43 @@ li {
 }
 
 @media all and (min-width: 800px) {
+	/* CSS GRID */
+	.overlay .sidebar {
+		grid-area: sidebar;
+	}
 
-	
+	.content {
+		grid-area: content;
+	}
+
+	.header {
+		grid-area: header;
+	}
+
+	.footer {
+		grid-area: footer;
+	}
+
+	.wrapper {
+		display: grid;
+		grid-template-columns: min-content 1fr;
+		grid-template-areas:
+	  "header  header  header"
+		"sidebar content content"
+		"footer  footer  footer";
+		color: #444;
+	}
+
 	.overlay {
+		display: inline-block;
 		position: relative;
-	  display: block;
 	  background-color: #211545;
 		padding: 1em;
-		width: 30%;
 	}
+
+
+	/* COLLAPSIBLE NAV */
+
 
 	a.closebtn {
 		display: none;
@@ -117,6 +145,8 @@ li {
 	  overflow: hidden;
 	  transition: max-height 0.2s ease-out;
 	  background-color: #f1f1f1;
+
+
 	}
 }
 
