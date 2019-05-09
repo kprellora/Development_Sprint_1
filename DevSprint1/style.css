@@ -169,7 +169,12 @@ td {
 
 /*iPhoneX*/
 @media only screen and (max-width:375px){
-
+	table {
+		border-collapse: collapse;
+		width: 100%;
+	  border-collapse: collapse;
+	  border: 1px solid black;
+	}
 }
 
 /*S5*/
