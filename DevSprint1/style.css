@@ -18,7 +18,7 @@
 
 .search-box:hover > .search-txt{
   width: 240px;
-  padding: 0 6px;
+  /*padding: 0 6px;*/
 }
 
 .search-box:hover > .search-btn{
@@ -103,4 +103,78 @@ th{
 td {
 	text-align: left;
 	padding: 8px;
+}
+/*iPad Pro Land*/
+@media only screen and (max-width:1366px){
+
+}
+
+/*iPad Pro*/
+@media only screen and (max-width:1024px){
+
+}
+
+/*iPhoneX Land*/
+@media only screen and (max-width:812px){
+
+}
+
+/*Pixel XL Land*/
+@media only screen and (max-width:823px){
+
+}
+
+/*iPhone Plus Land*/
+@media only screen and (max-width:812px){
+
+}
+
+/*iPad*/
+@media only screen and (max-width:768px){
+
+}
+
+/*Pixel Land*/
+@media only screen and (max-width:731px){
+
+}
+
+/*iPhone Land*/
+@media only screen and (max-width:667px){
+
+}
+
+/*S5 Land*/
+@media only screen and (max-width:640px){
+
+}
+
+/*iPhone5 Land*/
+@media only screen and (max-width:568px){
+
+}
+
+/*iPhone Plus*/
+@media only screen and (max-width:414px){
+
+}
+
+/*Pixel XL*/
+@media only screen and (max-width:411px){
+
+}
+
+/*iPhoneX*/
+@media only screen and (max-width:375px){
+
+}
+
+/*S5*/
+@media only screen and (max-width:360px){
+
+}
+
+/*iPhone 5*/
+@media only screen and (max-width:320px){
+
 }
