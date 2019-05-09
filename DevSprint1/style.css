@@ -1,16 +1,8 @@
-
-body{
-  margin: 0;
-  padding: 0;
-  background: #ffffff;
-}
-
 /*header*/
 .header1{
   background-color: #ffffff;
   padding: 30px;
 }
-
 
 /*Search Bar*/
 .search-box{
@@ -29,9 +21,12 @@ body{
   padding: 0 6px;
 }
 
+.search-box:hover > .search-btn{
+  background: white;
+}
 
 .search-btn{
-  color: #ffffff;
+  color: #eeeeee;
   float: right;
   width: 40px;
   height: 40px;
@@ -58,8 +53,8 @@ body{
 /*heading*/
 .heading{
   text-transform: uppercase;
-  font-size: 3.5rem;
-  letter-spacing: 3px;
+  font-size: 3rem;
+  letter-spacing: 1px;
   margin-right: -3px;
   margin-bottom: 5rem;
   text-align: center;
@@ -70,8 +65,8 @@ body{
 
 /*h2 topic*/
 .topic{
-  font-size: 3rem;
-  letter-spacing: 3px;
+  font-size: 2rem;
+  letter-spacing: 0px;
   padding-left: 10px;
 }
 
@@ -79,64 +74,30 @@ body{
   padding-left: 10px;
 }
 
-/*Accordion*/
-.container{
-  width: 100%;
-}
-
-label{
-  display: block;
-}
-
-.title{
-  background: #ccdfcb;
-  padding: 10px;
-  font-weight: bold;
-  border: .5px solid #eeeeee;
-  cursor: pointer;
-}
-
-span{
-  position: absolute;
-  right: 15px;
-  font-size: .8em;
-}
-
-.contentBox{
-  margin: 0 auto;
+.subtopic{
+  font-size: 1.5rem;
+  letter-spacing: 0px;
   padding-left: 10px;
-  height: 0;
-  overflow: hidden;
-  transition: all .3s;
+  color: #056571;
 }
 
-#title1:checked + .contentBox,
-#title2:checked + .contentBox,
-#title3:checked + .contentBox,
-#title4:checked + .contentBox{
-  padding: 20px 0px 20px 10px;
-  height: 50px;
-}
-
-input{
-  display: none;
-}
-
-/* Table */
+/*Table*/
 table {
 	border-collapse: collapse;
-	width: 100%;
+	width: 60%;
+  border-collapse: collapse;
+  border: 1px solid black;
 }
 
 tr:nth-child(even){
-	background-color: #f2f2f2;
+	background-color: #ffffff;
 }
 
 th{
 	text-align: left;
 	padding: 8px;
-	background-color: #000000;
-	color: #ffffff;
+	background-color: #ccdfcb;
+	color: #000000;
 }
 
 td {
