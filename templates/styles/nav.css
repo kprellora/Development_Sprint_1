@@ -1,167 +1,175 @@
-* {
-	box-sizing: border-box;
-	font-family: 'Open Sans', sans-serif;
+/* Mobile first */
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 body {
-	margin: 0;
-	display: grid;
-	grid-template-rows: min-content 1fr;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
 }
 
-header {
-	grid-row: 1/3;
-	text-align: center;
+header, div.header {
+  background: #211545;
+  color: white;
+  text-align: left;
+  position: sticky;
+  top: 0;
+  padding: .5rem 2rem;
 }
 
-main {
-	padding: 1em;
+h1 {
+  font-size: 1.5rem;
+  line-height: 1.75em;
 }
 
-ul {
-	list-style: none;
-	padding-left: 1em;
-}
-
-.overlay {
-  display: none;
+nav {
   background-color: #211545;
-  height: 100%;
+  height: 0%;
   width: 100%;
   position: fixed;
   overflow: auto;
   top: 0;
   left: 0;
-	padding: 1em;
-	z-index: 1;
+  z-index: 1;
+  transition: 0.2s;
 }
 
-.overlay a {
-  text-decoration: none;
-  display: block;
-  color: white;
-}
-
-.overlay a:not(.header) {
-  padding: .5em;
-	border: 1px solid transparent;
-}
-
-
-.overlay a:not(.header):hover, .overlay a:not(.header):focus  {
-  background-color: rgba(255,255,255,.25);
-  border-radius: 3px;
-  border: 1px solid white;
-  border
-  color: white;
-}
-
-.closebtn {
-  position: absolute;
-	right: .5em;
-  font-size: 3em;
+nav ul {
+  list-style: none;
   padding: 0;
 }
 
-.nav-heading {
-	position: sticky;
-	top:0;
+/* Indent without moving the background-color position */
+nav ul li a.nav-heading {
+  padding-left: 2rem;
+}
 
-	padding: .5em 1.25em;
-	background-color: #211545;
-	color: white;
+nav ul li a.nav-subheading {
+  padding-left: 3rem;
+}
+
+nav ul li a:not(nav-subheading) {
+  text-decoration: none;
+  display: block;
+  color: white;
+  padding-left: 4rem;
+}
+
+nav ul li a {
+  display: block;
+  padding: 0.5rem 2rem;
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a.current {
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 .arrow {
-	position: absolute;
-	right: 1.25em;
+  position: absolute;
+  right: 1.25em;
   border: solid white;
   border-width: 0 .13em .13em 0;
   display: inline-block;
-	padding: .3em;
+  padding: .3em;
   color: white;
-  margin-top: .2em;
+  margin: .2em;
 }
 
 .down {
-	transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.up {
+  transform: rotate(-135deg);
+}
+
+section:target {
+  padding-top: 89px; 
+  margin-top: -89px;
 }
 
 
-li {
-	border-bottom: 1px solid rgba(255,255,255,.1);
-}
 
 @media all and (min-width: 800px) {
-	/* CSS GRID */
-	.sidebar {
-		grid-area: sidebar;
-	}
+  body {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: min-content 1fr min-content;
+  }
 
-	.content {
-		grid-area: content;
-	}
+  header {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    display: inline-block;
+    position: static;
+    padding: 4rem;
+    text-align: center;
+  }
 
-	.header {
-		grid-area: header;
-	}
+  h1 {
+    font-size: 2rem;
+    line-height: 1.75em;
+  }
 
-	.footer {
-		grid-area: footer;
-	}
+  nav {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    display: inline-block;
+    white-space: nowrap;
+    background-color: #eeeeee;
+    width: auto;
+    height: initial !important;
+    overflow: initial;
+    position: static;
+    padding: 0;
+  }
 
-	.wrapper {
-		display: grid;
-		grid-template-columns: 1fr 3fr;
-		grid-template-areas:
-	  "header  header  header"
-		"sidebar content content"
-		"footer  footer  footer";
-		color: #444;
-	}
+  /* Only stick if you can fit */
+  @media (min-height: 300px) {
+    nav ul {
+      position: sticky;
+      top: 0;
+    }
+  }
 
-	.sidebar {
-		display: inline-block !important;
-		position: relative;
-	  background-color: #211545;
-		padding: 1em;
-	}
+  nav ul li a:not(nav-subheading) {
+    color: black;
+  }
 
-	a.closebtn {
-		display: none;
-	}
+  nav ul li a {
+    color: black;
+  }
 
-	.nav-heading {
-		display: none;
-	}
+  nav ul li a.current {
+    background: #404040;
+    text-decoration: none;
+  }
 
-	/* COLLAPSIBLE NAV */
+  section:target {
+    padding-top: 1rem; 
+    margin-top: initial;
+  }
 
-	.collapsible {
-	  cursor: pointer;
-	  display: grid;
-	  grid-template-columns: 1fr min-content;
-	  grid-column: 1/2;
-	}
+  div.header {
+    display: none;
+  }
 
-	.collapsible:after {
-	  content: '\002B';
-	  color: white;
-	  font-weight: bold;
-	  grid-column: 2/2;
-	  margin: auto;
-	  padding-left: 1em;
-	}
-
-	.active:after {
-	  content: "\2212";
-	}
-
-	.collapse-content {
-		max-height: 0;
-	  overflow: hidden;
-	  transition: max-height 0.2s ease-out;
-	}
+  .arrow {
+    display: none;
+  }
 }
 
 
+/* HELP FROM THE WEB
+
+https://css-tricks.com/sticky-smooth-active-nav/
+
+https://stackoverflow.com/questions/4086107/fixed-page-header-overlaps-in-page-anchors
+
+*/

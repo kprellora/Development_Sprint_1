@@ -1,26 +1,42 @@
+// mobile nav overlay ---------------------------------------------
+
 function openNav() {
-  document.getElementById("mobile-nav").style.display = "block";
-}
+  document.getElementById("nav-overlay").style.height = "100%";
+};
 
 function closeNav() {
-  document.getElementById("mobile-nav").style.display = "none";
-}
+  document.getElementById("nav-overlay").style.height = "0%";
+};
 
 
 
+// desktop nav scroll ---------------------------------------------
+
+var mainNavLinks = document.querySelectorAll("nav ul li a");
+var mainSections = document.querySelectorAll("main section");
+var x = window.matchMedia("(min-width: 800px)");
 
 
-var coll = document.getElementsByClassName("collapsible");
-var i;
+window.addEventListener("scroll", event => {
+  var fromTop = window.scrollY;
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
+  for (var i=0; i < mainNavLinks.length; i++) {
+    var section = document.querySelector(mainNavLinks[i].hash);
+
+    if (!x.matches) { // if width>=800
+      var header = document.getElementsByClassName("header");
+      var headerHeight = header[0].offsetHeight;
     } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    } 
-  });
-}
+      headerHeight = 0;
+    }
+
+    if (
+      fromTop >= section.offsetTop - 3 - headerHeight &&
+      fromTop < section.offsetTop + section.offsetHeight - headerHeight 
+    ) {
+      mainNavLinks[i].classList.add("current");
+    } else {
+      mainNavLinks[i].classList.remove("current");
+    }
+  }
+});
