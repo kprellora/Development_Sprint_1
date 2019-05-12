@@ -52,17 +52,17 @@
      background-color: #ffffff;
 }
  a:link {
-     color: red;
+     color: white;
      text-decoration: none;
 }
 /* visited link */
  a:visited {
-     color: yellow;
+     color: white;
      text-decoration: none;
 }
 /* mouse over link */
  a:hover {
-     text-decoration: underline;
+     
 }
 /* selected link */
  a:active {
@@ -174,9 +174,7 @@
      align-content: center;
      flex-direction: column;
 }
- .content{
-     padding:1rem;
-}
+
  .card{
      display: flex;
      flex-direction: column;

@@ -15,7 +15,7 @@ header {
 }
 
 main {
-	margin: 1em;
+	padding: 1em;
 }
 
 ul {
@@ -91,3 +91,77 @@ ul {
 li {
 	border-bottom: 1px solid rgba(255,255,255,.1);
 }
+
+@media all and (min-width: 800px) {
+	/* CSS GRID */
+	.sidebar {
+		grid-area: sidebar;
+	}
+
+	.content {
+		grid-area: content;
+	}
+
+	.header {
+		grid-area: header;
+	}
+
+	.footer {
+		grid-area: footer;
+	}
+
+	.wrapper {
+		display: grid;
+		grid-template-columns: 1fr 3fr;
+		grid-template-areas:
+	  "header  header  header"
+		"sidebar content content"
+		"footer  footer  footer";
+		color: #444;
+	}
+
+	.sidebar {
+		display: inline-block !important;
+		position: relative;
+	  background-color: #211545;
+		padding: 1em;
+	}
+
+	a.closebtn {
+		display: none;
+	}
+
+	.nav-heading {
+		display: none;
+	}
+
+	/* COLLAPSIBLE NAV */
+
+	.collapsible {
+	  cursor: pointer;
+	  display: grid;
+	  grid-template-columns: 1fr min-content;
+	  grid-column: 1/2;
+	}
+
+	.collapsible:after {
+	  content: '\002B';
+	  color: white;
+	  font-weight: bold;
+	  grid-column: 2/2;
+	  margin: auto;
+	  padding-left: 1em;
+	}
+
+	.active:after {
+	  content: "\2212";
+	}
+
+	.collapse-content {
+		max-height: 0;
+	  overflow: hidden;
+	  transition: max-height 0.2s ease-out;
+	}
+}
+
+
