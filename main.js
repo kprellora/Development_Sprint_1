@@ -52,3 +52,15 @@ function easeInOutCubic(t, b, c, d) {
 	t -= 2;
 	return c/2*(t*t*t + 2) + b;
 };
+
+window.onresize = function(event) {
+    var backToTopButton = document.getElementById('back-to-top-btn');
+    // console.log(event.target.outerWidth);
+    if(event.target.outerWidth <= 375){
+      backToTopButton.innerHtml = '<i class="fas fa-chevron-up"></i>';
+    }else{
+      backToTopButton.innerHtml = '<i class="fas fa-angle-double-up"></i>';
+    }
+    scrollFunction();
+    // console.log(backToTopButton.innerHtml);
+};
