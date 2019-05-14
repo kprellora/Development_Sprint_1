@@ -14,6 +14,13 @@
 .body-container{
 	/*padding: 20px 150px;*/
 }
+main {
+  padding: 2rem 2rem 20rem 2rem;
+}
+
+section {
+  margin-bottom: 3rem;
+}
 
 #back-to-top-btn{
 	display: none;
@@ -127,6 +134,12 @@
 }
 
 /*heading*/
+.bimg{
+	background-image: url('/w3images/forestbridge.jpg');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
 .heading{
   text-transform: uppercase;
   font-size: 3rem;
@@ -137,19 +150,32 @@
   color: #333333;
   position: relative;
   padding-left: 10px;
+	background-image: image('../image/images.jpeg');
 }
 
 /*h2 topic*/
 .topic{
-  font-size: 2rem;
+  font-size: 2.6rem;
   letter-spacing: 0px;
   padding-left: 10px;
 }
 
 .content{
   padding-left: 10px;
+	padding-bottom: 1px;
 }
-
+.paragraph-box{
+	background-color: #ecf9f2;
+  width: 750px;
+  border: 2px solid #ccdfcb;
+  padding: 70px;
+  margin: 20px;
+}
+.section{
+	font-size: 2rem;
+	letter-spacing: 0px;
+	padding-left: 10px;
+}
 .subtopic{
   font-size: 1.5rem;
   letter-spacing: 0px;
