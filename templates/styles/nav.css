@@ -43,18 +43,18 @@ nav ul {
 
 /* Indent without moving the background-color position */
 nav ul li a.nav-heading {
-  padding-left: 2rem;
+  padding-left: 3rem;
 }
 
 nav ul li a.nav-subheading {
-  padding-left: 3rem;
+  padding-left: 4rem;
 }
 
 nav ul li a:not(nav-subheading) {
   text-decoration: none;
   display: block;
   color: white;
-  padding-left: 4rem;
+  padding-left: 5rem;
 }
 
 nav ul li a {
