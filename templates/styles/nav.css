@@ -58,22 +58,23 @@ nav ul {
 
 /* Indent without moving the background-color position */
 nav ul li a.nav-heading {
-  padding-left: 1rem;
+  padding-left: 2rem;
 }
 
 nav ul li a.nav-subheading {
-  padding-left: 2.5rem;
+  padding-left: 3.5rem;
 }
 
 nav ul li a:not(nav-subheading) {
   text-decoration: none;
   display: block;
   color: white;
-  padding-left: 4rem;
+  padding-left: 5rem;
+  padding-right: 3rem;
 }
 
 nav ul li a {
-  display: block;
+  display: inline-block;
   padding: 0.5rem 2rem;
   color: white;
   text-decoration: none;
@@ -166,7 +167,6 @@ section:target {
     height: initial !important;
     overflow: initial;
     position: static;
-    padding: 0;
   }
 
   /* Only stick if you can fit */
@@ -185,9 +185,24 @@ section:target {
     color: black;
   }
 
+  nav ul li a::after {
+    display: block;
+    content: attr(title);
+    font-weight: bold;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+  }
+
+  nav ul li a:hover {
+    font-weight: bold;
+    background-color: #f5f5f5;
+  }
+
   nav ul li a.current {
     background: #404040;
     text-decoration: none;
+    font-weight: bold;
   }
 
   section:target {
@@ -211,3 +226,4 @@ https://css-tricks.com/sticky-smooth-active-nav/
 
 https://stackoverflow.com/questions/4086107/fixed-page-header-overlaps-in-page-anchors
 
+https://stackoverflow.com/questions/556153/inline-elements-shifting-when-made-bold-on-hover
