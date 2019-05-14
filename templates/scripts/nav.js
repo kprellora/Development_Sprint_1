@@ -31,7 +31,7 @@ window.addEventListener("scroll", event => {
     }
 
     if (
-      fromTop >= section.offsetTop - 5 - headerHeight &&
+      fromTop >= section.offsetTop - headerHeight - 40 &&
       fromTop < section.offsetTop + section.offsetHeight - headerHeight 
     ) {
       mainNavLinks[i].classList.add("current");

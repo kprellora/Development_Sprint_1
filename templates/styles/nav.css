@@ -24,7 +24,6 @@ h1 {
   line-height: 1.75em;
 }
 
-
 main {
   padding: 2rem 2rem 20rem 2rem;
 }
@@ -80,11 +79,6 @@ nav ul li a {
   text-decoration: none;
 }
 
-nav ul li a:hover {
-  border-bottom: 1px solid black;
-
-}
-
 nav ul li a.current {
   color: white;
   font-weight: bold;
@@ -115,8 +109,8 @@ nav>ul>li:not(:first-child) {
 }
 
 section:target {
-  padding-top: 89px; 
-  margin-top: -89px;
+  padding-top: 90px; 
+  margin-top: -90px;
 }
 
 
@@ -142,19 +136,19 @@ section:target {
     line-height: 1.75em;
   }
 
+  h2, h3 {
+    padding-top: auto;
+  }
+
   main {
     grid-column: 2/3;
     grid-row: 2/3;
     padding-bottom: 30rem;
   }
 
-  main section h2 {
-    margin-top: 0;
-  }
-
   section {
-    padding: 1rem 0;
-    margin: 0;
+    padding-top: 1rem;
+    margin-bottom: 3rem;
   }
 
   footer {
@@ -198,7 +192,7 @@ section:target {
 
   section:target {
     padding-top: 1rem; 
-    margin-top: initial;
+    margin-top: 0;
   }
 
   div.header {
