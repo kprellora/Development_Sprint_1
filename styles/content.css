@@ -1,17 +1,10 @@
 * {
-	font-family: 'Open Sans', sans-serif;
-}
-/*header*/
-.header1{
-  background-color: #ffffff;
-  padding: 30px;
+     font-family: 'Open Sans', sans-serif;
 }
 
-/*html{
-	scroll-behavior: smooth;
-}*/
-/*Body Container*/
 .body-container{
+	font-size: 100%;
+	padding: 1em;
 	/*padding: 20px 150px;*/
 }
 main {
@@ -22,6 +15,9 @@ section {
   margin-bottom: 3rem;
 }
 
+/*---------------------------------------------------------------------------------------------------------*/
+
+/*Back to top button*/
 #back-to-top-btn{
 	display: none;
 	position: fixed;
@@ -53,7 +49,7 @@ section {
 }
 
 /*FadeInUp*/
-@@keyframes btnEntrance {
+@keyframes btnEntrance {
 	from{
 		opacity: 0;
 		transform: translate3d(0, 100%, 0);
@@ -71,7 +67,7 @@ section {
 }
 
 /*FadeOutDown*/
-@@keyframes btnExit {
+@keyframes btnExit {
 	from{
 		opacity: 1;
 	}
@@ -79,12 +75,14 @@ section {
 		opacity: 0;
 		transform: translate3d(0, 100%, 0);
 	}
-
 }
+
+/*---------------------------------------------------------------------------------------------------------*/
+
 /*Search Bar*/
 .search-box{
   position: absolute;
-  top: 7.5%;
+  top: 150px;
   left: 80%;
   transform: translate(-50%, -50%);
   background: #056571;
@@ -95,7 +93,6 @@ section {
 
 .search-box:hover > .search-txt{
   width: 240px;
-  /*padding: 0 6px;*/
 }
 
 .search-box:hover > .search-btn{
@@ -133,51 +130,44 @@ section {
   width: 40px;
 }
 
-/*heading*/
+/*---------------------------------------------------------------------------------------------------------*/
 
 .heading{
-  text-transform: uppercase;
-  font-size: 3rem;
-  letter-spacing: 1px;
-  margin-right: -3px;
-  margin-bottom: 5rem;
-  text-align: center;
-  color: #333333;
-  position: relative;
-  padding-left: 10px;
+font-size: 2.5rem;
 }
 
-/*h2 topic*/
-.topic{
-  font-size: 2.6rem;
-  letter-spacing: 0px;
-  padding-left: 10px;
-}
-
-.content{
-  padding-left: 10px;
-	padding-bottom: 1px;
-}
 .paragraph-box{
 	background-color: #ecf9f2;
-  width: 750px;
-  border: 2px solid #ccdfcb;
-  padding: 30px;
-  margin: 20px;
-}
-.section{
-	font-size: 2rem;
-	letter-spacing: 0px;
-	padding-left: 10px;
-}
-.subtopic{
-  font-size: 1.5rem;
-  letter-spacing: 0px;
-  padding-left: 10px;
-/*  color: #056571;*/
+	width: 170px;
+	border: 2px solid #ccdfcb;
+	padding: 30px;
+	margin: 20px;
 }
 
-/*Youtube Video*/
+/*---------------------------------------------------------------------------------------------------------*/
+
+/*YouTube Video*/
+.iframe-container {
+	overflow: hidden;
+	padding-top: 56.25%;
+	position: relative;
+}
+
+.iframe-container iframe {
+	 border: 0;
+	 height: 100%;
+	 left: 0;
+	 position: absolute;
+	 top: 0;
+	 width: 100%;
+}
+
+/* 4x3 Aspect Ratio */
+.iframe-container-4x3 {
+	padding-top: 75%;
+}
+
+/*---------------------------------------------------------------------------------------------------------*/
 
 /*Table*/
 table {
@@ -204,89 +194,184 @@ td {
 	padding: 8px;
 }
 
-/*iPad*/
-@media only screen and (min-width:768px){
-
-}
-
-
-/*S5 Land*/
-@media only screen and (min-width:640px){
-
-}
-
-/*iPhone5 Land*/
-@media only screen and (min-width:568px){
-
-}
-
-/*iPhone Plus*/
-@media only screen and (min-width:414px){
-
-}
-
-/*Pixel XL*/
-@media only screen and (min-width:411px){
-
-}
-
-/*iPhoneX*/
-@media only screen and (max-width:375px){
-	#back-to-top-btn{
-		bottom: 20px;
-		right: 20px;
-		font-size: 40px;
-		width: 50px;
-		height: 50px;
-		border: 3px solid #333333;
-	}
-	.body-container{
-		font-size: 100%;
-	}
-
+/*---------------------------------------------------------------------------------------------------------*/
+/*For DESKTOP Screen*/
+@media screen and (min-width: 800px){
 .heading{
-	font-size: 2.5rem;
-}
+	  text-transform: uppercase;
+	  font-size: 3rem;
+	  letter-spacing: 1px;
+	  margin-right: -3px;
+	  margin-bottom: 5rem;
+	  text-align: center;
+	  color: #333333;
+	  position: relative;
+	  padding-left: 10px;
+	}
 
-	.paragraph-box{
+/*h2 topic*/
+.topic{
+	  font-size: 2.6rem;
+	  letter-spacing: 0px;
+	  padding-left: 10px;
+	}
+
+.content{
+	  padding-left: 10px;
+		padding-bottom: 1px;
+	}
+
+.paragraph-box{
 		background-color: #ecf9f2;
-	  width: 170px;
+	  width: 750px;
 	  border: 2px solid #ccdfcb;
 	  padding: 30px;
 	  margin: 20px;
 	}
 
-	.search-box{
-		top: 150px;
+.section{
+		font-size: 2rem;
+		letter-spacing: 0px;
+		padding-left: 10px;
 	}
 
-	.iframe-container {
-	  overflow: hidden;
-	  padding-top: 56.25%;
-	  position: relative;
+.subtopic{
+	  font-size: 1.5rem;
+	  letter-spacing: 0px;
+	  padding-left: 10px;
+	  color: #056571;
 	}
 
-	.iframe-container iframe {
-	   border: 0;
-	   height: 100%;
-	   left: 0;
-	   position: absolute;
-	   top: 0;
-	   width: 100%;
+/*---------------------------------------------------------------------------------------------------------*/
+/*Search Bar*/
+.search-box{
+	  position: absolute;
+	  top: 7.5%;
+	  left: 80%;
+	  transform: translate(-50%, -50%);
+	  background: #056571;
+	  height: 40px;
+	  border-radius: 40px;
+	  padding: 10px;
+	}
+
+.search-box:hover > .search-txt{
+	  width: 240px;
+	}
+
+.search-box:hover > .search-btn{
+		visibility: hidden;
+	  background: white;
+		position: absolute;
+		top: 10px;
+		right:10px;
+		visibility: visible;
+	}
+
+.search-btn{
+		position: absolute;
+	  color: #eeeeee;
+	  float: right;
+	  width: 40px;
+	  height: 40px;
+	  border-radius: 50%;
+	  background: #056571;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	}
+
+.search-txt{
+	  border: none;
+	  background: none;
+	  outline: none;
+	  float: left;
+	  padding: 0px;
+	  color: #ffffff;
+	  font-size: 16px;
+	  transition: 0.4s;
+	  line-height: 40px;
+	  width: 40px;
+	}
+
+/*---------------------------------------------------------------------------------------------------------*//*Youtube Video*/
+.iframe-container {
+		overflow: hidden;
+		padding-top: 56.25%;
+		position: relative;
+	}
+
+.iframe-container iframe {
+		 border: 0;
+		 height: 65%;
+		 left: 0;
+		 position: absolute;
+		 top: 0;
+		 bottom: -50px;
+		 width: 65%;
 	}
 
 	/* 4x3 Aspect Ratio */
-	.iframe-container-4x3 {
-	  padding-top: 75%;
+.iframe-container-4x3 {
+		padding-top: 50%;
 	}
-}
 
-/*S5*/
-@media only screen and (min-width:360px){
+#back-to-top-btn{
+		display: none;
+		position: fixed;
+		bottom: 20px;
+		right: 20px;
+		font-size: 26px;
+		width: 50px;
+		height: 50px;
+		background-color: #ffffff;
+		color: #333333;
+		cursor: pointer;
+		outline: none;
+		border: 3px solid #333333;
+		border-radius: 50%;
+		transition-duration: 0.2s;
+		transition-timing-function: ease-in-out;
+		transition-property: background-colour, color;
+	}
 
-}
+#back-to-top-btn:hover, #back-to-top-btn:focus{
+		background-color: #333333;
+		color: #ffffff;
+	}
 
-/*iPhone 5*/
-@media only screen and (min-width:320px){
+.btnEntrance{
+		animation-duration: 0.5s;
+		animation-fill-mode: both;
+		animation-name: btnEntrance;
+	}
+
+	/*FadeInUp*/
+@keyframes btnEntrance {
+		from{
+			opacity: 0;
+			transform: translate3d(0, 100%, 0);
+		}
+		to{
+			opacity: 1;
+			transform: translate3d(0, 0, 0);
+		}
+	}
+
+.btnExit{
+		animation-duration: 0.25s;
+		animation-fill-mode: both;
+		animation-name: btnExit;
+	}
+
+	/*FadeOutDown*/
+@keyframes btnExit {
+		from{
+			opacity: 1;
+		}
+		to{
+			opacity: 0;
+			transform: translate3d(0, 100%, 0);
+		}
 
 }
