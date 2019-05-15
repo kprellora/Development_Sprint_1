@@ -120,7 +120,7 @@ section:target {
 @media all and (min-width: 800px) {
   body {
     display: grid;
-    grid-template-columns: min-content 1fr;
+    grid-template-columns: 35% 1fr;
     grid-template-rows: min-content 1fr min-content;
   }
 
@@ -147,7 +147,7 @@ section:target {
   
     background-size: cover;
   }
-
+  
   h1 {
     font-size: 4rem;
     line-height: 1.75em;
@@ -177,7 +177,7 @@ section:target {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     display: inline-block;
-    white-space: nowrap;
+    white-space: wrap;
     background-color: #eeeeee;
     width: auto;
     height: initial !important;
@@ -235,6 +235,23 @@ section:target {
   }
 }
 
+@media all and (min-width: 1440px) {
+  body {
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: min-content 1fr min-content;
+  }
+
+  nav {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    display: inline-block;
+    white-space: nowrap;
+    background-color: #eeeeee;
+    width: auto;
+    height: initial !important;
+    overflow: initial;
+    position: static;
+  }
 
 /* HELP FROM THE WEB
 
