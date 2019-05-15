@@ -134,11 +134,7 @@ section {
 }
 
 /*heading*/
-.bimg{
-	background-image: url('/w3images/forestbridge.jpg');
-  min-height: 100%;
-  background-position: center;
-  background-size: cover;
+
 }
 .heading{
   text-transform: uppercase;
@@ -168,7 +164,7 @@ section {
 	background-color: #ecf9f2;
   width: 750px;
   border: 2px solid #ccdfcb;
-  padding: 70px;
+  padding: 30px;
   margin: 20px;
 }
 .section{
@@ -182,6 +178,8 @@ section {
   padding-left: 10px;
   color: #056571;
 }
+
+/*Youtube Video*/
 
 /*Table*/
 table {
@@ -271,14 +269,53 @@ td {
 
 /*iPhoneX*/
 @media only screen and (max-width:375px){
-	/*#back-to-top-btn{
+	#back-to-top-btn{
 		bottom: 20px;
 		right: 20px;
 		font-size: 40px;
 		width: 50px;
 		height: 50px;
 		border: 3px solid #333333;
-	}*/
+	}
+	.body-container{
+		font-size: 100%;
+	}
+
+.heading{
+	font-size: 2.5rem;
+}
+
+	.paragraph-box{
+		background-color: #ecf9f2;
+	  width: 170px;
+	  border: 2px solid #ccdfcb;
+	  padding: 30px;
+	  margin: 20px;
+	}
+
+	.search-box{
+		top: 150px;
+	}
+
+	.iframe-container {
+	  overflow: hidden;
+	  padding-top: 56.25%;
+	  position: relative;
+	}
+
+	.iframe-container iframe {
+	   border: 0;
+	   height: 100%;
+	   left: 0;
+	   position: absolute;
+	   top: 0;
+	   width: 100%;
+	}
+
+	/* 4x3 Aspect Ratio */
+	.iframe-container-4x3 {
+	  padding-top: 75%;
+	}
 }
 
 /*S5*/

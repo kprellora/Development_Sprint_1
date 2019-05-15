@@ -6,8 +6,8 @@
      padding: 1em;
      text-align: center;
 }
- html {
-    /* font-size */
+html {
+box-sizing: border-box;
 }
  h1, h2, h3, h4, h5, h6 {
     /* margins/spacing */
@@ -52,17 +52,21 @@
      background-color: #ffffff;
 }
  a:link {
-     color: white;
+     color: red;
      text-decoration: none;
 }
 /* visited link */
  a:visited {
-     color: white;
+     color: yellow;
      text-decoration: none;
 }
 /* mouse over link */
  a:hover {
-     
+<<<<<<< HEAD
+
+=======
+     text-decoration: underline;
+>>>>>>> 258a342220169be45dee08baf4265969b4b78206
 }
 /* selected link */
  a:active {
@@ -115,6 +119,7 @@
  .button1{
      background-color: #008080;
      color: #ffffff ;
+     padding:1em;
 }
  .button1:hover{
      background-color: #003333;
@@ -168,13 +173,14 @@
   text-align: left;
 }
  .cards{
-     width:100%;
      display: flex;
      align-items: stretch;
-     align-content: center;
      flex-direction: column;
-}
 
+}
+ .content{
+     padding:1rem;
+}
  .card{
      display: flex;
      flex-direction: column;
@@ -183,6 +189,7 @@
      margin: 1rem;
      box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.4);
      padding: 1rem;
+
 }
  .card-img{
      width:100%;
@@ -193,9 +200,8 @@
      body{
          font-size: 100%;
     }
+
      .cards{
-         flex-direction: row;
-    }
-     .card:hover{
-         transform: scale(1.10);
+      flex-direction: row;
+      margin: auto 20%;
     }
