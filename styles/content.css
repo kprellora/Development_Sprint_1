@@ -134,11 +134,7 @@ section {
 }
 
 /*heading*/
-.bimg{
-	background-image: url('/w3images/forestbridge.jpg');
-  min-height: 100%;
-  background-position: center;
-  background-size: cover;
+
 }
 .heading{
   text-transform: uppercase;
@@ -279,6 +275,85 @@ td {
 		height: 50px;
 		border: 3px solid #333333;
 	}*/
+	.content{
+		font-size: 15px;
+	}
+	.heading{
+		font-size: 50px;
+		position: center;
+	}
+
+	.topic{
+		font-size: 45px;
+	}
+	#back-to-top-btn{
+		display: none;
+		position: fixed;
+		bottom: 20px;
+		right: 20px;
+		font-size: 26px;
+		width: 50px;
+		height: 50px;
+		background-color: #ffffff;
+		color: #333333;
+		cursor: pointer;
+		outline: none;
+		border: 3px solid #333333;
+		border-radius: 50%;
+		transition-duration: 0.2s;
+		transition-timing-function: ease-in-out;
+		transition-property: background-colour, color;
+	}
+
+	#back-to-top-btn:hover, #back-to-top-btn:focus{
+		background-color: #333333;
+		color: #ffffff;
+	}
+
+	.btnEntrance{
+		animation-duration: 0.5s;
+		animation-fill-mode: both;
+		animation-name: btnEntrance;
+	}
+
+	/*FadeInUp*/
+	@@keyframes btnEntrance {
+		from{
+			opacity: 0;
+			transform: translate3d(0, 100%, 0);
+		}
+		to{
+			opacity: 1;
+			transform: translate3d(0, 0, 0);
+		}
+	}
+
+	.btnExit{
+		animation-duration: 0.25s;
+		animation-fill-mode: both;
+		animation-name: btnExit;
+	}
+
+	/*FadeOutDown*/
+	@@keyframes btnExit {
+		from{
+			opacity: 1;
+		}
+		to{
+			opacity: 0;
+			transform: translate3d(0, 100%, 0);
+		}
+
+	}
+
+	.paragraph-box{
+		background-color: #ecf9f2;
+	  width: 170px;
+	  border: 2px solid #ccdfcb;
+	  padding: 30px;
+	  margin: 20px;
+	}
+	.
 }
 
 /*S5*/
