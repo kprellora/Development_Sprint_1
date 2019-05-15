@@ -4,10 +4,10 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<title>Academic Writing Navigation</title>
-
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 		<link href="styles/nav.css" rel="stylesheet">
+
+		<title>Academic Writing Navigation</title>
 	</head>
 	<body>
 		<header onclick="openNav()" class="header">
@@ -19,20 +19,25 @@
 			<div onclick="closeNav()" class="header">
 				<h2>Academic Writing <span class="arrow up"></span></h2>
 			</div>
-			<!-- <h2 class="header" onclick="closeNav()">Academic Writing<span class="closebtn" class="arrow down"></span></h2> -->
+
 		  <ul>
-		    <li><a onclick="closeNav()" class="nav-heading" href="#formal-writing">Formal Writing</a>
+		    <li><a onclick="closeNav()" class="nav-level1" href="#formal-writing">Formal Writing</a>
 					<ul>
-						<li><a onclick="closeNav()" class="nav-subheading" href="#formal">Making your writing sound formal</a>
+						<li><a onclick="closeNav()" class="nav-level2" href="#formal">Making your writing sound formal</a>
 							<ul>
 								<li><a onclick="closeNav()" href="#ppronouns">Where to avoid using personal pronouns</a></li>
 								<li><a onclick="closeNav()" href="#judgements" title="Making judgements: evaluations and opinions">Making judgements: evaluations and opinions</a></li>
 							</ul>
 						</li>
-						<li><a onclick="closeNav()" class="nav-subheading" href="#avoid">What to avoid in formal writing</a>
+						<li><a onclick="closeNav()" class="nav-level2" href="#avoid">What to avoid in formal writing</a>
 							<ul>
 								<li><a onclick="closeNav()" href="#cliches">Cliches</a></li>
-								<li><a onclick="closeNav()" href="#fspeech">Figures of speech</a></li>
+								<li><a onclick="closeNav()" href="#fspeech">Figures of speech</a>
+									<ul>
+										<li><a onclick="closeNav()" href="#simile"  class="nav-level4">Similes</a></li>
+										<li><a onclick="closeNav()" href="#metaphor" class="nav-level4">Metaphors</a></li>
+									</ul>
+								</li>
 								<li><a onclick="closeNav()" href="#informal">Informal language</a></li>
 								<li><a onclick="closeNav()" href="#padding">Padding</a></li>
 								<li><a onclick="closeNav()" href="#complex">Complex writing</a></li>
@@ -42,11 +47,11 @@
 					</ul>
 		    </li>
 
-		    <li><a onclick="closeNav()" class="nav-heading" href="#qps">Quoting, Paraphrasing and Summarising</a>
+		    <li><a onclick="closeNav()" class="nav-level1" href="#qps">Quoting, Paraphrasing and Summarising</a>
 					<ul>
-						<li><a onclick="closeNav()" class="nav-subheading" href="#quoting">Quoting</a></li>
-						<li><a onclick="closeNav()" class="nav-subheading" href="#paraphrasing">Paraphrasing</a></li>
-						<li><a onclick="closeNav()" class="nav-subheading" href="#summarising">Summarising</a></li>
+						<li><a onclick="closeNav()" class="nav-level2" href="#quoting">Quoting</a></li>
+						<li><a onclick="closeNav()" class="nav-level2" href="#paraphrasing">Paraphrasing</a></li>
+						<li><a onclick="closeNav()" class="nav-level2" href="#summarising">Summarising</a></li>
 					</ul>
 		    </li>
 		  </ul>
@@ -66,7 +71,7 @@
 				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae?</p>
 			</section>
 			<section id="judgements">
-				<h4>Making judgements: evaluations and opinions</h4>
+				<h4>Evaluations and opinions</h4>
 				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae?</p>
 			</section>
 			<section id="avoid">
@@ -78,6 +83,14 @@
 				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae?</p>
 			</section>
 			<section id="fspeech">
+				<h4>Figures of speech</h4>
+				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae?</p>
+			</section>
+			<section id="simile">
+				<h4>Figures of speech</h4>
+				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae?</p>
+			</section>
+			<section id="metaphor">
 				<h4>Figures of speech</h4>
 				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae?</p>
 			</section>

@@ -32,6 +32,10 @@ section {
   margin-bottom: 3rem;
 }
 
+h2, h3, h4, p {
+  color: #333333;
+}
+
 footer {
   background: #211545;
   padding: 4rem 1rem;
@@ -58,18 +62,21 @@ nav ul {
 }
 
 /* Indent without moving the background-color position */
-nav ul li a.nav-heading {
+nav ul li a.nav-level1 {
   padding-left: 2rem;
 }
 
-nav ul li a.nav-subheading {
+nav ul li a.nav-level2 {
   padding-left: 3.5rem;
 }
 
-nav ul li a:not(nav-subheading) {
+nav ul li a.nav-level4 {
+  padding-left: 6.5rem;
+}
+
+nav ul li a:not(nav-level1):not(nav-level2):not(nav-level4) {
   text-decoration: none;
   display: block;
-  color: white;
   padding-left: 5rem;
   padding-right: 3rem;
 }
