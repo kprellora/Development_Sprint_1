@@ -305,6 +305,12 @@ td {
   padding: 8px;
 }
 
+.example {
+  background-color: #ecf9f2;
+  border: 2px solid #ccdfcb;
+  padding: 1.5rem;
+  margin: 2rem;
+}
 
 
 
@@ -539,6 +545,11 @@ td {
       }
 
     }
+
+  header>h1>a {
+    color: white;
+    text-decoration: none;
+  }
 
 
 }
