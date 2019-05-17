@@ -139,7 +139,7 @@ header>h1>a {
 }
 
 section:target {
-  padding-top: 90px; 
+  padding-top: 90px;
   margin-top: -90px;
 }
 
@@ -348,10 +348,10 @@ td {
       rgba(33, 21, 69, .8)),
 
       url(writing.jpg) no-repeat bottom center;
-  
+
     background-size: cover;
   }
-  
+
   header>h1 {
     font-size: 4rem;
     line-height: 1.75em;
@@ -426,7 +426,7 @@ td {
   }
 
   section:target {
-    padding-top: 1rem; 
+    padding-top: 1rem;
     margin-top: 0;
   }
 
