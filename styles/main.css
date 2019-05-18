@@ -1,18 +1,17 @@
 * {
-     font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
- body{
-     font-size: 85%;
-     padding: 1em;
-     text-align: left;
+
+body{
+	font-size: 85%;
+	padding: 1em;
+	text-align: left;
 }
 
 html {
-box-sizing: border-box;
+	box-sizing: border-box;
 }
- h1, h2, h3, h4, h5, h6 {
-    /* margins/spacing */
-}
+
  h1 {
      font-size: 2.25em;
      line-height: 1.33em;
@@ -54,13 +53,13 @@ box-sizing: border-box;
 
 }
  a:link {
-     color: red;
+     color: white;
      text-decoration: none;
 }
 /* visited link */
  a:visited {
-     color: yellow;
-     text-decoration: none;
+     color: white;
+     text-decoration: underline;
 }
 /* mouse over link */
  a:hover {
@@ -68,8 +67,8 @@ box-sizing: border-box;
 }
 /* selected link */
  a:active {
-     color: blue;
-     text-decoration: none;
+     color: white;
+     text-decoration: underline;
 }
  table {
      border-collapse: collapse;
@@ -119,6 +118,7 @@ box-sizing: border-box;
      background-color: #008080;
      color: #ffffff ;
      padding:1em;
+     text-align: center;
 }
  .button1:hover{
      background-color: #003333;
@@ -156,12 +156,7 @@ box-sizing: border-box;
      background-color: #8c8c8c;
      color: #000000;
 }
- ul {
-}
- ol {
-}
- .breadcrumb{
-}
+
  p.example {
      border-style: outset;
      background-color: #d9d9d9;
@@ -188,10 +183,10 @@ box-sizing: border-box;
      margin: 1rem;
      padding: 1rem;
 }
- .card-img{
+/* .card-img{
      width:100%;
      height:auto;
-}
+}*/
 
 
 /* CSS for tablets/large screens */
