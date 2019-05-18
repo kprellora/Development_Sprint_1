@@ -130,7 +130,7 @@ header>h2>a {
 }
 
 section:target {
-  padding-top: 90px; 
+  padding-top: 90px;
   margin-top: -90px;
 }
 
@@ -333,10 +333,10 @@ td {
       rgba(33, 21, 69, .8)),
 
       url(writing.jpg) no-repeat bottom center;
-  
+
     background-size: cover;
   }
-  
+ 
   header>h2 {
     font-size: 4rem;
     line-height: 1.75em;
@@ -407,7 +407,7 @@ td {
   }
 
   section:target {
-    padding-top: 1rem; 
+    padding-top: 1rem;
     margin-top: 0;
   }
 
@@ -516,4 +516,5 @@ https://css-tricks.com/sticky-smooth-active-nav/
 https://stackoverflow.com/questions/4086107/fixed-page-header-overlaps-in-page-anchors
 
 https://stackoverflow.com/questions/556153/inline-elements-shifting-when-made-bold-on-hover
+
 */
