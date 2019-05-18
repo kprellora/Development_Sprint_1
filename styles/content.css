@@ -20,11 +20,6 @@ header, div.header {
   z-index: 1;
 }
 
-header>h1 {
-  font-size: 1.5rem;
-  line-height: 1.75em;
-}
-
 main {
   padding: 2rem 2rem 20rem 2rem;
 }
@@ -43,7 +38,7 @@ h2:not(.heading), h3, h4, p {
 
 h1:not(.heading), h2:not(.heading), h3, h4 {
   border-bottom: 1px dotted #ccc;
-  padding: .5em;
+  padding: .5em 0;
 }
 
 
@@ -66,10 +61,6 @@ nav {
   z-index: 1;
   transition: 0.2s;
 }
-
-/*nav h2 {
-  color: white;
-}*/
 
 nav ul {
   list-style: none;
@@ -113,7 +104,7 @@ nav>ul>li:not(:first-child) {
   margin-top: 1rem;
 }
 
-header>h1>a {
+header>h2>a {
   color: white;
   text-decoration: none;
 }
@@ -144,9 +135,7 @@ section:target {
 }
 
 
-/* FROM AUGUSTO --------------------------------------------------------- */
-
-/*---------------------------------------------------------------------------------------------------------*/
+/* FROM AUGUSTO ----------------------------------------------------- */
 
 /*Back to top button*/
 #back-to-top-btn{
@@ -208,9 +197,8 @@ section:target {
   }
 }
 
-/*---------------------------------------------------------------------------------------------------------*/
+/* Search Bar ------------------------------------------------------- */
 
-/*Search Bar*/
 .search-box{
   position: absolute;
   top: 150px;
@@ -261,9 +249,8 @@ section:target {
   width: 40px;
 }
 
-/*---------------------------------------------------------------------------------------------------------*/
 
-/*YouTube Video*/
+/* YouTube video ---------------------------------------------------- */
 .iframe-container {
   overflow: hidden;
   padding-top: 56.25%;
@@ -284,12 +271,10 @@ section:target {
   padding-top: 75%;
 }
 
-/*---------------------------------------------------------------------------------------------------------*/
+/* Table ------------------------------------------------------------ */
 
-/*Table*/
 table {
   border-collapse: collapse;
-  width: 60%;
   border-collapse: collapse;
   border: 1px solid black;
   padding-left: 10px;
@@ -352,13 +337,9 @@ td {
     background-size: cover;
   }
   
-  header>h1 {
+  header>h2 {
     font-size: 4rem;
     line-height: 1.75em;
-  }
-
-  h1, h2, h3 {
-    padding-top: auto;
   }
 
   main {
@@ -381,7 +362,7 @@ td {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     display: inline-block;
-    white-space: wrap;
+    white-space: nowrap;
     background-color: #eeeeee;
     width: auto;
     height: initial !important;
@@ -439,58 +420,6 @@ td {
   }
 
   /* FROM AUGUSTO ------------------------------------------------------ */
-
-  .search-box{
-      position: absolute;
-      top: 7.5%;
-      left: 80%;
-      transform: translate(-50%, -50%);
-      background: #056571;
-      height: 40px;
-      border-radius: 40px;
-      padding: 10px;
-      z-index: 9999;
-    }
-
-  .search-box:hover > .search-txt{
-      width: 240px;
-    }
-
-  .search-box:hover > .search-btn{
-      visibility: hidden;
-      background: white;
-      position: absolute;
-      top: 10px;
-      right:10px;
-      visibility: visible;
-    }
-
-  .search-btn{
-      position: absolute;
-      color: #eeeeee;
-      float: right;
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      background: #056571;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-  .search-txt{
-      border: none;
-      background: none;
-      outline: none;
-      float: left;
-      padding: 0px;
-      color: #ffffff;
-      font-size: 16px;
-      transition: 0.4s;
-      line-height: 40px;
-      width: 40px;
-    }
-
 
   #back-to-top-btn{
       display: none;
@@ -550,7 +479,11 @@ td {
         transform: translate3d(0, 100%, 0);
       }
 
-    }
+  }
+
+  table {
+    width: 60%;
+  }
   .example {
     margin: 2rem;
   }
@@ -574,6 +507,7 @@ td {
     overflow: initial;
     position: static;
   }
+}
 
 /* HELP FROM THE WEB
 
@@ -582,3 +516,4 @@ https://css-tricks.com/sticky-smooth-active-nav/
 https://stackoverflow.com/questions/4086107/fixed-page-header-overlaps-in-page-anchors
 
 https://stackoverflow.com/questions/556153/inline-elements-shifting-when-made-bold-on-hover
+*/
