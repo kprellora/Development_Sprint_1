@@ -1,14 +1,6 @@
  /* Mobile first */
 
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-display: auto;
-  src:  local('Open Sans Regular'),
-        local('OpenSans-Regular'),
-        url(https://fonts.gstatic.com/s/opensans/v16/mem8YaGs126MiZpBA-UFVZ0bf8pkAg.woff2) format('woff2');
-}
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 html {
   scroll-behavior: smooth;
